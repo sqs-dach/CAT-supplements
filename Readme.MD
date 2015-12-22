@@ -1,4 +1,4 @@
-Additional stuff for practical iSQI&#0153; CAT Certified Agile Tester&#0153;  Training
+Additional stuff for practical iSQI&#0174; CAT Certified Agile Tester&#0174;  Training
 =========
 
 * Holidays.xsls - Excel Sheet to generate SQL statements to add holidays of a given year
