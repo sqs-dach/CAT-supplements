@@ -1,0 +1,11 @@
+#!/bin/sh
+read -p "Enter Team(eg team_1):" team;
+echo $team;
+if [ -z "$team" ]; then
+        echo "The sprint was left empty";
+        exit;
+fi
+
+/opt/lampp/bin/mysql -u root -pPlanit10 $team < wp_eventscalendar_2015.sql
+/opt/lampp/bin/mysql -u root -pPlanit10 $team < wp_eventscalendar_2016.sql
+

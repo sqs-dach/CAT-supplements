@@ -1,0 +1,16 @@
+#! /bin/sh
+
+cat <<-EOF | /build
+	sprint4_drop1
+	team_1
+EOF
+
+cat <<-EOF | /build
+	sprint4_drop2
+	team_2
+EOF
+ 
+cat <<-EOF | /build
+	sprint4_drop3
+	team_3
+EOF

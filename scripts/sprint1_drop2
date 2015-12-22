@@ -1,0 +1,9 @@
+#! /bin/sh
+
+for i in 1 2 3 4; do
+	cat <<-EOF | /build
+		sprint1_drop2
+		team_$i
+	EOF
+done
+ 
