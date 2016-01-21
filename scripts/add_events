@@ -1,4 +1,5 @@
 #!/bin/sh
+echo "Note: Events are available from sprint2_drop3"
 read -p "Enter Team(eg team_1):" team;
 echo $team;
 if [ -z "$team" ]; then
@@ -6,6 +7,6 @@ if [ -z "$team" ]; then
         exit;
 fi
 
-/opt/lampp/bin/mysql -u root -pPlanit10 $team < wp_eventscalendar_2015.sql
-/opt/lampp/bin/mysql -u root -pPlanit10 $team < wp_eventscalendar_2016.sql
-
+for i in `ls -1 wp_eventscalendar*.sql`; do
+	/opt/lampp/bin/mysql -u root -pPlanit10 $team < $i
+done
